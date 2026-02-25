@@ -65,7 +65,7 @@ const Login = () => {
               <input
                 type="email"
                 name="email"
-                className="input"
+                className="input mx-2"
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
@@ -81,7 +81,7 @@ const Login = () => {
               <input
                 type="password"
                 name="password"
-                className="input"
+                className="input mx-2"
                 placeholder="Enter your password"
                 value={formData.password}
                 onChange={handleChange}

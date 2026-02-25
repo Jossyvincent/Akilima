@@ -107,7 +107,7 @@ const Register = () => {
               <input
                 type="text"
                 name="name"
-                className="input"
+                className="input mx-2"
                 placeholder="Enter your full name"
                 value={formData.name}
                 onChange={handleChange}
@@ -123,7 +123,7 @@ const Register = () => {
               <input
                 type="email"
                 name="email"
-                className="input"
+                className="input mx-2"
                 placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
@@ -188,7 +188,7 @@ const Register = () => {
               <input
                 type="password"
                 name="password"
-                className="input"
+                className="input mx-2"
                 placeholder="Create a password (min. 6 characters)"
                 value={formData.password}
                 onChange={handleChange}
@@ -204,7 +204,7 @@ const Register = () => {
               <input
                 type="password"
                 name="confirmPassword"
-                className="input"
+                className="input mx-1"
                 placeholder="Confirm your password"
                 value={formData.confirmPassword}
                 onChange={handleChange}

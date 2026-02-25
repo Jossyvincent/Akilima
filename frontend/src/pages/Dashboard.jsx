@@ -53,7 +53,7 @@ const Dashboard = () => {
       title: 'Weather',
       value: `${weather?.current?.temp}°C`,
       label: weather?.current?.description,
-      gradient: 'from-blue-500 to-blue-600'
+      gradient: 'from-green-500 to-green-600'
     },
     {
       icon: FaLeaf,
@@ -67,14 +67,14 @@ const Dashboard = () => {
       title: 'Market Data',
       value: Object.keys(marketPrices).length,
       label: 'Crops with prices',
-      gradient: 'from-yellow-500 to-yellow-600'
+      gradient: 'from-green-500 to-green-600'
     },
     {
       icon: FaUser,
       title: 'Role',
       value: user?.role?.replace('_', ' '),
-      label: 'Account type',
-      gradient: 'from-purple-500 to-purple-600'
+      label: 'Account',
+      gradient: 'from-green-500 to-green-600'
     }
   ];
 
@@ -84,10 +84,10 @@ const Dashboard = () => {
         {/* Header */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">
-            Welcome, {user?.name}!
+            Welcome, {user?.name}
           </h1>
           <p className="text-gray-600">
-            Here's your agricultural dashboard for Kisii County
+            Here's your agricultural dashboard for Kisii region
           </p>
         </div>
 
@@ -111,12 +111,12 @@ const Dashboard = () => {
 
         {/* Current Weather */}
         {weather && (
-          <div className="card mb-8 bg-linear-to-br from-blue-500 to-blue-600 text-white">
+          <div className="card mb-8 bg-linear-to-br from-green-500 to-green-600 text-white rounded-2xl p-2">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-center md:text-left">
                 <h2 className="text-2xl font-bold mb-2 flex items-center gap-2">
                   <FaCloudSun />
-                  Current Weather in Kisii County
+                  Current Weather in Kisii
                 </h2>
                 <div className="text-5xl font-bold mb-2">{weather.current.temp}°C</div>
                 <p className="text-xl capitalize opacity-90">{weather.current.description}</p>
@@ -139,7 +139,7 @@ const Dashboard = () => {
                 </div>
               </div>
             </div>
-            <Link to="/weather" className="btn bg-white text-blue-600 hover:bg-gray-100 mt-6">
+            <Link to="/weather" className="btn bg-white text-black hover:bg-gray-100 mt-6 border rounded p-0.5">
               View Detailed Forecast
             </Link>
           </div>
