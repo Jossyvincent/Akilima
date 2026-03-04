@@ -41,11 +41,11 @@ const Weather = () => {
     <div className="min-h-screen pt-20 px-4 pb-12">
       <div className="max-w-7xl mx-auto">
         <div className="mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-2 flex items-center gap-3">
-            <FaCloudSun className="text-blue-500" />
+          <h1 className="text-3xl font-bold text-gray-900 mb-2 flex items-center gap-3">
+            <FaCloudSun className="text-yellow-500" />
             Weather Dashboard
           </h1>
-          <p className="text-gray-600">Real-time weather information for Kisii County</p>
+          <p className="text-gray-600">Real-time weather information for Kisii region</p>
         </div>
 
         {weatherData && (
